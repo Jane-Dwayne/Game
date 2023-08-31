@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fullscreen Game</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+    <script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-database.js"></script>
+    <script>
+        // Initialize Firebase
+        const config = {
+        apiKey: "AIzaSyBYpXYRyIRdN8o0GyfVewSdUM2P3Q-tUb4",
+        authDomain: "onlinetesting-42b6b.firebaseapp.com",
+        databaseURL: "https://onlinetesting-42b6b-default-rtdb.firebaseio.com",
+        projectId: "onlinetesting-42b6b",
+        storageBucket: "onlinetesting-42b6b.appspot.com",
+        messagingSenderId: "303642679764",
+        appId: "1:303642679764:web:9ea15e68cbd228618dde41",
+        measurementId: "G-V4TG46RRYG"
+        };
+
+        firebase.initializeApp(config);
+    </script>
+    <iframe
+        id="game-frame"
+        src="https://tw-spaceship-game.firebaseapp.com/" frameborder="0" allowfullscreen></iframe>
+    </body>
+</html>
